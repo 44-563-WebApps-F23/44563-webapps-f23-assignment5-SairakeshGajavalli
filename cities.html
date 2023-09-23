@@ -59,8 +59,24 @@
   </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" href="#">A Few Cities</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="my-navbar">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="basic.html">Basic</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="advanced.html">Advanced</a>
+            </li>
+        </ul>
+    </div>
+</nav>
   <div class="container">
-    <h1>Visit cities with Sairakesh</h1>
+    <h1 id="cities-top">Visit cities with Sairakesh</h1>
     <div class="row">
       <div class="col-sm-2">G</div>
       <div class="col-sm-2">A</div>
@@ -192,5 +208,19 @@
     </div>
   </div>
 </div>
+<br>
+<div class="container">
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      My Dropdown
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li><a class="dropdown-item active" href="basic.html">Basic File</a></li>
+      <li><a class="dropdown-item" href="advanced.html">Advanced File</a></li>
+      <li><a class="dropdown-item" href="#cities-top">Back to top</a></li>
+    </ul>
+  </div>
+</div>
+<br>
 </body>
 </html>
