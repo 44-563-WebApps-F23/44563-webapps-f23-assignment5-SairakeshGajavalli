@@ -26,6 +26,36 @@
       border-radius: 10px;
       margin-top: 10px;
     }
+    @media (min-width: 320px) and (max-width: 767px) {
+      .container .row .col-md-4 .img-fluid{
+        width: 100px !important;
+        height: 100px !important;
+      }
+      .container .row .col-md-4 .img-thumbnail{
+        width: 100px !important;
+        height: 100px !important;
+      }
+    }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .container .row .col-md-4 .img-fluid{
+        width: 250px !important;
+        height: 250px !important;
+      }
+      .container .row .col-md-4 .img-thumbnail{
+        width: 250px !important;
+        height: 250px !important;
+      }
+    }
+    @media (min-width: 992px) {
+      .container .row .col-md-4 .img-fluid{
+        width: 400px !important;
+        height: 400px !important;
+      }
+      .container .row .col-md-4 .img-thumbnail{
+        width: 400px !important;
+        height: 400px !important;
+      }
+    }
   </style>
 </head>
 <body>
@@ -51,6 +81,36 @@
   <br>
   <div style="background-color: aliceblue;">
     <p>As the browser size is adjusted, the city names in the second row usually transition to a horizontally before the other content. This behavior occurs because the 'col-md' class is used for the city names, and it is specifically designed to modify the layout when the screen size reaches the medium. And also when we are reducing the size of the page, we will notice that the row containing with city names are breaks first. This is because the city names are longer and require more horizontal space to display, whereas the letters in the First Row are shorter and can fit into narrower columns.</p>
+  </div>
+  <br>
+  <h4>Responsive</h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="guntur.jpg" alt="Guntur" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="agra.jpg" alt="Agra" class="img-fluid">
+      </div>
+      <div class="col-md-4">
+        <img src="jaipur.jpg" alt="Jaipur" class="img-fluid">
+      </div>
+    </div>
+  </div>
+  <br>
+  <h4>img-thumbnail</h4>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="guntur.jpg" alt="Guntur" class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="agra.jpg" alt="Agra" class="img-thumbnail">
+      </div>
+      <div class="col-md-4">
+        <img src="jaipur.jpg" alt="Jaipur" class="img-thumbnail">
+      </div>
+    </div>
   </div>
 </body>
 </html>
